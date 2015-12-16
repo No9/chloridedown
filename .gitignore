@@ -32,3 +32,13 @@ deps/libsodium/src/Makefile
 deps/libsodium/test/default/Makefile
 deps/libsodium/test/Makefile
 deps/libsodium/libtool
+deps/Release/obj/libsodium/libsodium.tlog/CL.read.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/Lib-link.read.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/Lib-link.write.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/cl.command.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/cl.write.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/lib.command.1.tlog
+deps/Release/obj/libsodium/libsodium.tlog/libsodium.lastbuildstate
+deps/libsodium.sln
+deps/libsodium.vcxproj
+deps/libsodium.vcxproj.filters

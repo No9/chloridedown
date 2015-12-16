@@ -6,6 +6,30 @@
             'dependencies': [],
             'defines': [
             ],
+            'conditions': [
+                ['OS == "win"', {
+                        'defines': [
+                                '_HAS_EXCEPTIONS=0',
+                                    'WIN32',
+                                    'SODIUM_STATIC',
+                                    'NDEBUG',
+                                    '_MSC_VER',
+                                    'HAVE_AMD64_ASM=1',
+                                    'SODIUM_HAVE_AMD64_ASM',
+                                    'inline=__inline',
+                                    'NATIVE_LITTLE_ENDIAN', 
+                                    '_CRT_SECURE_NO_WARNINGS'
+                        ], 
+                        'msvs_settings': {
+                                'VCCLCompilerTool': {
+                                'RuntimeTypeInfo': 'false',
+                                'EnableFunctionLevelLinking': 'true',
+                                'ExceptionHandling': '2',
+                                'DisableSpecificWarnings': [ '4355', '4530' ,'4267', '4244', '4506' ]
+                                }
+                        },
+                }]
+            ],
             'include_dirs': [
                 'libsodium/src/libsodium/include/sodium',
             ],

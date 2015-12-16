@@ -4,6 +4,18 @@
 
         'targets': [
             {
+                'conditions': [
+                        ['OS == "win"', {
+                              'msvs_settings': {
+                                    'VCCLCompilerTool': {
+                                    'RuntimeTypeInfo': 'false',
+                                    'EnableFunctionLevelLinking': 'true',
+                                    'ExceptionHandling': '2',
+                                    'DisableSpecificWarnings': [ '4355', '4530' ,'4267', '4244', '4506' ]
+                                    }
+                              },
+                        }]
+                  ],
                   'target_name': 'sodium',
                   'sources': [
                         'sodium.cc',
